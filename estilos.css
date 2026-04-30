@@ -1,0 +1,208 @@
+:root {
+    --color-primario: #1a365d;
+    --color-secundario: #2b6cb0;
+    --color-acento: #4299e1;
+    --color-fondo: #f7fafc;
+    --color-texto: #2d3748;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-texto);
+}
+
+.seccion-principal {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+    padding-top: 80px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.icono-perfil {
+    font-size: 80px;
+    color: white;
+}
+
+.titulo-seccion {
+    color: var(--color-primario);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.titulo-seccion::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--color-acento);
+}
+
+.texto-descripcion {
+    color: #4a5568;
+    line-height: 1.8;
+}
+
+.tarjeta-estudio {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-estudio:hover {
+    transform: translateY(-5px);
+}
+
+.icono-estudio {
+    font-size: 3rem;
+    color: var(--color-secundario);
+}
+
+.tarjeta-proyecto {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.icono-proyecto {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--color-acento);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.etiquetas {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-habilidad {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-habilidad:hover {
+    transform: translateY(-5px);
+}
+
+.icono-lenguaje {
+    font-size: 3rem;
+}
+
+.color-html {
+    color: #e34f26;
+}
+
+.color-css {
+    color: #1572b6;
+}
+
+.color-js {
+    color: #f7df1e;
+}
+
+.barra-progreso {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progreso {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-secundario), var(--color-acento));
+    border-radius: 4px;
+}
+
+.tarjeta-interes {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.tarjeta-interes .card-body {
+    color: white;
+}
+
+.icono-interes {
+    font-size: 4rem;
+    color: var(--color-acento);
+}
+
+.tarjeta-contacto {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-contacto:hover {
+    transform: translateY(-5px);
+}
+
+.icono-contacto {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+}
+
+.enlace-contacto {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.enlace-contacto:hover {
+    color: var(--color-acento);
+}
+
+.pie-pagina {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pequeño {
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .seccion-principal {
+        padding-top: 100px;
+    }
+    
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .icono-perfil {
+        font-size: 60px;
+    }
+    
+    .titulo-seccion {
+        font-size: 1.75rem;
+    }
+}
